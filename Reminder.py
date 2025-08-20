@@ -35,7 +35,7 @@ def check():
     
 def play_snd():
     pygame.mixer.init()
-    pygame.mixer.music.load('reminder.mp3')
+    pygame.mixer.music.load("reminder.mp3")
     pygame.mixer.music.play()         
  
 
@@ -45,6 +45,9 @@ label = Label(text='Установите напоминание')
 label.pack(pady=10)
 set_button = Button(text='Установить напоминание', command=set)
 set_button.pack()
+
+
+check()
 
 window.mainloop()
 
