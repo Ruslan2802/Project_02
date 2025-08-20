@@ -42,11 +42,11 @@ def play_snd():
     pygame.mixer.music.play()         
  
  
- def stop_music():
-     global music
-     if music:
-         pygame.mixer.music.stop()
-         music = False
+def stop_music():
+    global music
+    if music:
+        pygame.mixer.music.stop()
+        music = False
     label.config(text='Установить новое напоминание')
  
 
