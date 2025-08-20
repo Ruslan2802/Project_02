@@ -31,7 +31,12 @@ def set():
          if now >= t:
              play_snd()
              t = 0
-    window.after(10000, check)           
+    window.after(10000, check)
+    
+def play_send():
+    pygame.mixer.init()
+    pygame.mixer.music.load('reminder.mp3')
+    pygame.mixer.music.play()         
 
 
 
